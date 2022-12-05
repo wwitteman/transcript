@@ -2,13 +2,14 @@
 
 """Use speech to text to record live transription and person identification."""
 
-import speech_recognition
+import whisper
 
-recog = speech_recognition.Recognizer()
+#model = whisper.load_model("tiny")
+model = whisper.load_model("base")
+#model = whisper.load_model("medium")
 
+# transcribe
+result = model.transcribe("filename.mp3")
 
-
-
-
-
+print(result["text"])
 
