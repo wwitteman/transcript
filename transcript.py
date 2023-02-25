@@ -9,7 +9,7 @@ model = whisper.load_model("base")
 #model = whisper.load_model("medium")
 
 # transcribe
-result = model.transcribe("filename.mp3")
+result = model.transcribe("C:/Users/Utilisateur/Desktop/transcript/filename.mp3")
 
 print(result["text"])
 
